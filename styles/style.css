@@ -96,11 +96,12 @@ body {
 }
 .banner__productImage {
     display: flex;
-    margin-left: -77px;
+    min-width: 1140px;
+    justify-content: space-between;
 }
 .banner__titleWrap {
     margin-top: 290px;
-    margin-left: 64px;
+    margin-right: 99px;
     display: flex;
     max-height: 105px;
 }
