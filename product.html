@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Продукт</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/f66c2f8b47.js" crossorigin="anonymous"></script>
+
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__leftBlock">
+                <div class="header__logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="header__search">
+                   <a href="#"><img src="images/search.svg" alt="search_button"></a>
+                </div>
+            </div>
+            <div class="header__rightBlock">
+                <div class="header__menu">
+                    <a href="#"><img src="images/menu.svg" alt="menu_button"></a>
+                </div>
+                <div class="header__login">
+                    <a href="#"><img src="images/login.svg" alt="login_button"></a>
+                </div>
+                <div class="header__cart">
+                    <a href="#"><img src="images/cart.svg" alt="cart_button"></a>
+                    <div class="header__cart__goodsAmmount">
+                        <img src="images/cart_ammount1.svg" alt="cart_ammount1">
+                        <img src="images/cart_ammount2.svg" class="cart_ammount2_five" alt="cart_ammount2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="navigationBlock">
+        <div class="navigationBlock__container container">
+            <div class="navigationBlock__arrivals">
+                <p>new arrivals</p>
+            </div>
+            <nav>
+                <ul>
+                    <a href="index.html"><li>home /</li></a>
+                    <a href="#"><li>man /</li></a>
+                    <a href="#"><li id="navColorSelection">new arrivals</li></a>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section class="productSlider">
+        <div class="productSlider__Button">
+            <i class="productSlider__icon fas fa-chevron-left fa-2x"></i>
+        </div>
+        <div class="productSlider__image container">
+        <img src="images/product-model.jpg" alt="product model">
+        </div>
+        <div class="productSlider__Button">
+            <i class="productSlider__icon fas fa-chevron-left fa-2x fa-rotate-180"></i>
+        </div>
+    </section>
+
+    <section class="productCard container">
+        <div class="productCard__wrap">
+            <h5>women collection</h5>
+            <img src="images/redRectangle.svg" alt="redRectangle" class="productCard__rectangle">
+            <h4>moschino cheap and chic</h4>
+            <p class="productCard__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+            <h3>$561</h3>
+            <img src="images/Vector.svg" alt="vector" class="productCard__rectangleBlack">
+            <div class="productCard__filters catalog__fiterRightSide">
+                <div class="catalog__parameter">
+                    <a href="#"><p>choose color</p></a>
+                    <a href="#"><img src="images/arrow_down.svg" alt="arrow"></a>
+                </div>
+                <div class="catalog__parameter">
+                    <a href="#"><p>choose size</p></a>
+                    <a href="#"><img src="images/arrow_down.svg" alt="arrow"></a>
+                </div>
+                <div class="catalog__parameter">
+                    <a href="#"><p>quantity</p></a>
+                    <a href="#"><img src="images/arrow_down.svg" alt="arrow"></a>
+                </div>
+            </div>
+            <button class="productCard__addButton">
+                <img src="images/redCart.svg" alt="red_cart">
+                <p>Add to Cart</p>
+            </button>
+        </div>
+    </section>
+
+    <section class="Productcards container">
+        <div class="Productcards__productItems productItems__itemBlocks">
+            <div class="productItems__itemBlock">
+                <img src="images/item4.jpg" alt="item1">
+                <h5>ELLERY X M'O CAPSULE</h5>
+                <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <h4>$52.00</h4>
+            </div>
+            <div class="productItems__itemBlock">
+                <img src="images/item3.jpg" alt="item2">
+                <h5>ELLERY X M'O CAPSULE</h5>
+                <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <h4>$52.00</h4>
+            </div>
+            <div class="productItems__itemBlock">
+                <img src="images/item6.jpg" alt="item2">
+                <h5>ELLERY X M'O CAPSULE</h5>
+                <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <h4>$52.00</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedbackSubscribe__product feedbackSubscribe">
+        <div class="feedbackSubscribe__container container">
+        <div class="feedbackSubscribe__feedback">
+            <img src="images/feedback.svg" alt="face">
+            <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a pulvinar purus condimentum</span>“</p>
+        </div>
+        <div class="feedbackSubscribe__subscribe">
+            <p><span>subscribe</span><br>for our newletter and promotion</p>
+            <form action="#">
+                <div class="feedbackSubscribe__subscribe__form">
+                    <input type="email" name="form-email" id="email" placeholder="Enter your Email">
+                    <input type="submit" value="Subscribe">
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__container container">
+        <div class="footer__rights">
+            <p>© 2021  Brand  All Rights Reserved.</p>
+        </div>
+        <div class="footer__socialNetworks">
+            <a href="#" class="footer__socialNetworksBlock fab fa-facebook-f"></a>  
+            <a href="#" class="footer__socialNetworksBlock fab fa-instagram"></a>
+            <a href="#" class="footer__socialNetworksBlock fab fa-pinterest-p"></a>
+            <a href="#" class="footer__socialNetworksBlock fab fa-twitter"></a>
+        </div>
+        </div>
+    </footer>
+        
+    
+</body>
+</html>
