@@ -279,7 +279,7 @@ a.productItems__button {
     margin-top: 48px;
 }
 .productItems__button  {
-    width: 213px;
+    width: 219px;
     height: 47px;
     border: 1px solid #FF6A6A;
     padding: 14px 38px;
@@ -336,8 +336,9 @@ a.productItems__button {
 }
 
 .feedbackSubscribe {
-    background: url(../images/photo_subscribe.svg) no-repeat;
+    background: url(../images/photo_subscribe.jpg) no-repeat;
     background-size: cover;
+    background-position: left bottom;
 }
 .feedbackSubscribe__container {
     min-height: 448px;
