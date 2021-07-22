@@ -1,0 +1,23 @@
+a.productItems__button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+.productItems__button  {
+    width: 219px;
+    height: 47px;
+    border: 1px solid #FF6A6A;
+    padding: 14px 38px;
+    min-width: 135px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+}
+.productItems__button:hover {
+    color: #ffffff;
+    background-color: #F26376;
+    
+}

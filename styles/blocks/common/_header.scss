@@ -1,0 +1,35 @@
+.header {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+
+    background-color: #222222
+}
+.header__container {
+    min-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__leftBlock {
+    min-width: 111px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.header__rightBlock {
+    min-width: 168px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+.header__cart__goodsAmmount img {
+    position: absolute;
+    top: 0;
+    right: -7px;
+}
+.header__cart__goodsAmmount img:last-child {
+    top: 5px;
+    right: 0;
+}
+
