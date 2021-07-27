@@ -1,0 +1,46 @@
+footer {
+    background: #222224;
+}
+.footer__container {
+    min-height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__rights {
+    min-width: 332px;
+}
+.footer__rights p {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+.footer__socialNetworks {
+    min-width: 150px;
+    min-height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__socialNetworksBlock {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    text-align: center;
+    transition: 1s;
+}
+.footer__socialNetworksBlock a {
+    transition-delay: 1s;
+    transform-origin: left bottom;
+  }
+.footer__socialNetworksBlock:hover {
+    background-color: #F16D7F;
+    transform: rotateY(360deg); 
+}

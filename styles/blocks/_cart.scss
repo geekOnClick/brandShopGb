@@ -1,0 +1,235 @@
+// Миксины
+
+@mixin description {
+    h3 {
+        max-width: 211px;
+        text-transform: uppercase;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+    }
+    p {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        color: #575757;
+        position: relative;
+    }
+    input {
+        padding-left: 14px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #575757;
+        position: relative;
+    }
+    .cart__price {
+        color: #F16D7F;
+    }
+    .cart__quantity {
+        border: 1px solid antiquewhite ;
+        display: block;
+        width: 44px;
+        height: 25px;
+        position: absolute;
+        top: 0px;
+        right: 101px;
+        text-align: center;
+    }
+}
+
+@mixin order-form {
+    h3 {
+        text-transform: uppercase;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+    input[type="text"] {
+        padding-left: 17px;
+        width: 359px;
+        height: 44px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #222222;
+        border: 1px solid #A4A4A4;
+    }
+    #firstPlaceholder {
+        color: #B1B1B1;
+        opacity: 0.6;
+    }
+    .cart__btn {
+        text-transform: uppercase;
+        width: 101px;
+        height: 35px;
+        text-align: center;
+        border: 1px solid #A4A4A4;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        background-color: white;
+        color: #A4A4A4;
+        transition: 0.6s;
+
+        &:hover {
+            background-color: #F16D7F; 
+            color: #FFFFFF;
+        }
+    }
+}
+
+.cart {
+    margin-top: 96px;
+    min-height: 774px;
+    display: flex;
+    justify-content: space-between;
+}
+.cart__content {
+    min-width: 652px;
+    min-height: 774px;
+}
+
+// cart item
+
+.cart__item {
+    width: 652px;
+    height: 306px;
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+    box-shadow:  5px 7px 22px -13px;
+
+    .cart__description {
+        min-width: 262px;
+        max-height: 222px;
+        margin-top: 22px;
+        margin-left: 31px;
+        @include description;
+    }
+    .cart__description p:nth-child(2) {
+        margin-top: 42px;
+    }
+    &.cart__item svg {
+        position: absolute;
+        fill: #575757;
+        right: 22px;
+        top: 28px;
+    }
+}
+
+.cart__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+
+
+    .cart__button {
+        width: 235px;
+        border: 1px solid #222222;;
+        margin: 0;
+        text-transform: uppercase;
+        color: #222222; 
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+
+// checkout 
+.cart__checkout {
+    margin-top: 17px;
+    min-width: 360px;
+    max-height: 570px;
+}
+.cart__adress {
+    min-height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include order-form;
+}
+
+//proceed
+.cart__proceed {
+    margin-top: 57px;
+    min-height: 214px;
+    background: #F5F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 39px;    
+}
+.cart__sub {
+    margin-right: 34px;
+    min-width: 108px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+}
+.cart__grand {
+    margin-right: 37px;
+    padding-top: 12px;
+    min-width: 170px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+    .cart__grand span {
+        font-weight: 700;
+        color: #F16D7F;
+    }
+}
+
+.cart__proceed img {
+    margin: 0 auto;
+    margin-top: 21px;
+}
+.cart__but {
+    margin: 0 auto;
+    margin-top: 17px;
+    width: 273px;
+    height: 50px;
+    border: 1px solid #F16D7F;
+    background-color: #F16D7F;
+    padding: 14px 38px;
+    min-width: 135px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+.cart__but:hover {
+    color: #F16D7F;
+    background-color: #ffffff;
+    
+}
