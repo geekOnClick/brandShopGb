@@ -45,3 +45,22 @@
 
     @include features-text;
 }
+
+// Tablet
+@media (max-width: 768px)  {
+    .shopFeatures__container {
+        display: block;
+        min-height: 610px;
+    }
+    .shopFeatures__feature {
+        margin: 0 auto;
+        padding-top: 48px;
+    }
+}
+
+// Mobile 
+@media (max-width: 488px)  {
+    .shopFeatures{
+        min-width: 488px;
+    }
+}

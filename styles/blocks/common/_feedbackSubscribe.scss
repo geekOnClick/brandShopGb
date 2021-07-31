@@ -109,3 +109,26 @@
     cursor: pointer;
     background: #D73C3C;
 }
+
+// Tablet
+@media (max-width: 768px)  {
+    .feedbackSubscribe__container {
+        display: block;
+        min-height: 610px;
+    }
+    .feedbackSubscribe__feedback {
+        margin: 0 auto;
+        padding-top: 64px;
+    }
+    .feedbackSubscribe__subscribe {
+        margin: 0 auto;
+        padding-top: 48px;
+    }
+}
+
+// Mobile 
+@media (max-width: 488px)  {
+    .feedbackSubscribe{
+        min-width: 488px;
+    }
+}

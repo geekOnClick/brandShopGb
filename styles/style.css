@@ -387,7 +387,7 @@ body {
 
 @media (max-width: 488px) {
   .header {
-    min-width: 484px;
+    min-width: 488px;
   }
   .header__login {
     display: none;
@@ -814,7 +814,7 @@ body {
 
 @media (max-width: 488px) {
   .banner {
-    min-width: 484px;
+    min-width: 488px;
   }
   .banner__image {
     display: none;
@@ -1944,6 +1944,7 @@ details[open] summary ~ * {
   .productItems__itemBlock {
     width: 359px;
     height: 579px;
+    margin: 0 auto;
   }
   .productItems__itemBlock img {
     width: 100%;
@@ -2085,6 +2086,23 @@ a.productItems__button {
   color: #FBFBFB;
 }
 
+@media (max-width: 768px) {
+  .shopFeatures__container {
+    display: block;
+    min-height: 610px;
+  }
+  .shopFeatures__feature {
+    margin: 0 auto;
+    padding-top: 48px;
+  }
+}
+
+@media (max-width: 488px) {
+  .shopFeatures {
+    min-width: 488px;
+  }
+}
+
 .feedbackSubscribe {
   background: url(../images/photo_subscribe.jpg) no-repeat;
   background-size: cover;
@@ -2221,6 +2239,27 @@ a.productItems__button {
   background: #D73C3C;
 }
 
+@media (max-width: 768px) {
+  .feedbackSubscribe__container {
+    display: block;
+    min-height: 610px;
+  }
+  .feedbackSubscribe__feedback {
+    margin: 0 auto;
+    padding-top: 64px;
+  }
+  .feedbackSubscribe__subscribe {
+    margin: 0 auto;
+    padding-top: 48px;
+  }
+}
+
+@media (max-width: 488px) {
+  .feedbackSubscribe {
+    min-width: 488px;
+  }
+}
+
 footer {
   background: #222224;
 }
@@ -2295,5 +2334,25 @@ footer {
   background-color: #F16D7F;
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg);
+}
+
+@media (max-width: 488px) {
+  footer {
+    min-width: 488px;
+  }
+  .footer__container {
+    min-height: 143px;
+    display: block;
+    position: relative;
+  }
+  .footer__rights {
+    left: 123px;
+    position: absolute;
+    bottom: 0;
+  }
+  .footer__socialNetworks {
+    margin: 0 auto;
+    padding-top: 43px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

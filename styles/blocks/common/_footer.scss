@@ -46,3 +46,24 @@ footer {
     background-color: #F16D7F;
     transform: rotateY(360deg); 
 }
+
+// Mobile 
+@media (max-width: 488px)  {
+    footer {
+        min-width: 488px;
+    }
+    .footer__container{
+        min-height: 143px;
+        display: block;
+        position: relative;
+    }
+    .footer__rights {
+        left: 123px;
+        position: absolute;
+        bottom: 0;
+    }
+    .footer__socialNetworks {
+        margin: 0 auto;
+        padding-top: 43px;
+    }
+}
